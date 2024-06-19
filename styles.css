@@ -1,0 +1,409 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+header h1 {
+   
+    color: white;
+  
+    font-size:large;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+#search-section {
+    padding: 2rem;
+    text-align: center;
+}
+
+#exercise-search {
+    padding: 0.5rem;
+    width: 300px;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    margin-left: 10px;
+}
+
+.exercise-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.exercise-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    background-color: #f9f9f9;
+    cursor: pointer;
+}
+
+.exercise-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.exercise-types {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.exercise-types-container {
+    display: flex;
+    overflow: hidden;
+    width: 80%;
+}
+
+.exercise-types-card {
+    flex: 0 0 20%;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.arrow {
+    cursor: pointer;
+    font-size: 2rem;
+    padding: 0 10px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.page-numbers a {
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.favorite-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.favorite-button .fas {
+    color: red;
+}
+
+.favorite-button .far {
+    color: grey;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#modal-instructions ul {
+    text-align: left;
+}
+
+
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1f1f1f;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+header img.logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+header nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+#search-section {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+#exercise-search {
+    padding: 0.5rem;
+    width: 200px;
+}
+
+#search-button {
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+#search-button:hover {
+    background-color: #0056b3;
+}
+
+.exercise-types-container, .exercise-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.exercise-card {
+    background-color: #1f1f1f;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 200px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.exercise-card img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.page-numbers a {
+    color: #ffffff;
+    margin: 0 0.5rem;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20%;
+    background-color: #333;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.page-numbers a:hover {
+    background-color: #555;
+}
+
+.page-numbers a.active {
+    background-color: #007bff;
+    font-weight: bold;
+}
+
+.arrow {
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 2rem;
+    padding: 0 1rem;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    background-color: #1f1f1f;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    border-radius: 8px;
+    color: #ffffff;
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.gif-img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1f1f1f;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+header nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+.bmi-form {
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.bmi-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.bmi-form input {
+    padding: 0.5rem;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+#calculate-bmi-button {
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+#calculate-bmi-button:hover {
+    background-color: #0056b3;
+}
+
+#bmi-result {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+}
+
+
+
+
+.exercise-types {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.arrow {
+    cursor: pointer;
+    font-size: 2rem;
+    padding: 10px;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.arrow:hover {
+    border-color: #007bff; /* Change to your desired hover color */
+}
+
+.left-arrow {
+    margin-right: 10px; /* Adjust margin as needed */
+}
+
+.right-arrow {
+    margin-left: 10px; /* Adjust margin as needed */
+}
